@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --padding-section:100px;
+    --hover:red;
+    color-scheme: dark;
+}
+
+.landing a {
+    display: contents;
+}
+.logo {
+    margin-left: 20px;
+}
+.logo p {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: -11px;
+    display: contents;
+}
+.logo p:first-child {
+    font-size: 50px;
+    margin-left: 20px;
+}
+.logo p:nth-child(2){
+    font-size: 50px;
+    margin-left: 20px;
+    color: rgb(65, 177, 234);;
+}
+.search {
+    color: white;
+    font-size: 17px;
+    margin-right: 20px;
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+} 
+@media (min-width:992px) {
+    .container {
+        width: 980px;
+    }
+} 
+@media (min-width:1199px) {
+    .container {
+        width: 1170px;
+    }
+} 
+html {
+    scroll-behavior: smooth;
+    cursor:url(../1659859329148.ico), auto !important;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+ul, li a {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+.landing {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0 30px;
+    background-color: #2b2d42;
+    height: 350px;
+}
+.landing p {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.landing img {
+    width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.landing li a {
+    text-transform: uppercase;
+    color: white;
+}
+@media (max-width:767px) {
+    .landing p {
+    font-size: 30px;
+    }
+    .landing img{
+        position: absolute;
+        left:10px;
+    }
+    .landing li a {
+        position: absolute;
+        right: 10px;
+    }
+    .summer p {
+        padding: 10px 25px !important;
+        font-size: 27px !important;
+        border: 5px solid white !important;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .landing {
+        height: 250px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .summer p {
+        padding: 10px 25px !important;
+        font-size: 25px !important;
+        border: 5px solid white !important;
+        
+    }
+}
+@media (max-width:1199px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .summer p {
+        padding: 10px 35px !important;
+        font-size: 27px !important;
+        border: 5px solid white !important;
+    }
+    .summer p {
+        padding: 10px 35px !important;
+        font-size: 45px !important;
+        border: 7px solid white !important;
+    }
+}
+
+@media (max-width:1660px) {
+    .container {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .summer p {
+        padding: 10px 35px !important;
+        font-size: 60px !important;
+        border: 5px solid white !important;
+    }
+    .summer p {
+        padding: 10px 35px !important;
+        font-size: 45px !important;
+        border: 7px solid white !important;
+    }
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 1632px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.summer  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.summer  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    font-size: 90px;
+    transform: translate(-50%, -50%);
+    background: #b75d69;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.7;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: fit-content;
+    border: 20px solid white;
+}
+@media (max-width:768px) {
+    .summer p {
+        padding: 10px 35px !important ;
+        font-size: 27px !important;
+    }
+}
+
+footer {
+    background: #2b2d42;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+footer li i  {
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+}
